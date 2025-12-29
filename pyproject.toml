@@ -27,9 +27,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/georgios48/fastapi-allowed-hosts.git"
-Repository = "https://github.com/georgios48/fastapi-allowed-hosts.git"
-Documentation = "https://github.com/georgios48/fastapi-allowed-hosts.git"
+Homepage = "https://github.com/georgios48/fastapi-allowed-hosts"
+Repository = "https://github.com/georgios48/fastapi-allowed-hosts"
+Documentation = "https://github.com/georgios48/fastapi-allowed-hosts"
 
 [project.optional-dependencies]
 dev = [
