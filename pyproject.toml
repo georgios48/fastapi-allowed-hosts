@@ -26,11 +26,10 @@ dependencies = [
     "fastapi (>=0.128.0,<0.129.0)",
 ]
 
-# TODO: Fix these classifiers
-# [project.urls]
-# Homepage =
-# Repository =
-# Documentation =
+[project.urls]
+Homepage = "https://github.com/georgios48/fastapi-allowed-hosts.git"
+Repository = "https://github.com/georgios48/fastapi-allowed-hosts.git"
+Documentation = "https://github.com/georgios48/fastapi-allowed-hosts.git"
 
 [project.optional-dependencies]
 dev = [
