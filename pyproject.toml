@@ -1,0 +1,52 @@
+[project]
+name = "fastapi-allowed-hosts"
+version = "0.1.0"
+description = "A FastAPI middleware for validating Host headers against allowed hosts, inspired by Django's ALLOWED_HOSTS"
+authors = [
+    {name = "Georgios Semerdzhiev", email = "asenov01@hotmail.com"}
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.14"
+keywords = ["fastapi", "middleware", "security", "allowed-hosts", "host-validation", "starlette"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Security",
+    "Typing :: Typed",
+]
+dependencies = [
+    "fastapi (>=0.128.0,<0.129.0)",
+]
+
+# TODO: Fix these classifiers
+# [project.urls]
+# Homepage =
+# Repository =
+# Documentation =
+
+[project.optional-dependencies]
+dev = [
+    "pytest (>=9.0.2,<10.0.0)",
+    "httpx (>=0.28.0,<0.29.0)",
+    "ruff (>=0.14.10,<0.15.0)",
+]
+
+[tool.poetry]
+packages = [{include = "fastapi_allowed_hosts", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
